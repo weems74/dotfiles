@@ -6,6 +6,7 @@ set t_Co=256
 colorscheme monokai
 set nowrap
 :set softtabstop=4 shiftwidth=4 expandtab
+
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " set the runtime path to include Vundle and initialize
@@ -33,12 +34,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 Plugin 'user/L9', {'name': 'newL9'}
 
+"File browser plugin
 Plugin 'https://github.com/scrooloose/nerdtree'
-"Plugin 'https://github.com/ervandew/supertab'
-"Plugin 'https://github.com/bling/vim-airline'
 
 " Color scheme for front end coding
 Plugin 'crusoexia/vim-monokai'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
