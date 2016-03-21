@@ -1,38 +1,51 @@
-set nocompatible  	"from Vundle
-filetype off		"from Vundle
-set number
-syntax on
-set t_Co=256
-colorscheme monokai
-set nowrap
+" For more settings, see http://dougblack.io/words/a-good-vimrc.html
+
+" Settings required by Vundle
+set nocompatible    "Leave on Vi Improved enhancements
+filetype off		
+
+set number          " Turn on line numbering  
+syntax on           " Turn on syntax highlighting
+set t_Co=256        " 256 colors
+set nowrap          " Do not wrap text
+
+" Set Color Scheme (in ~/.vim/colors)
+colorscheme monokai 
+
+" Set tab settings
 :set softtabstop=4 shiftwidth=4 expandtab
 
+" autocomplete HTML tags
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" VUNDLE EXAMPLES
+"
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
+" Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Possible HTML editing plugin
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
-Plugin 'user/L9', {'name': 'newL9'}
 
 "File browser plugin
 Plugin 'https://github.com/scrooloose/nerdtree'
