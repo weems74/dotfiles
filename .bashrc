@@ -17,7 +17,6 @@ alias mkdir='mkdir -p'
 #JAVA environment vars
 export JAVA_HOME=/opt/java/jdk1.7.0_75/
 export PATH=$PATH:/opt/java/jdk1.7.0_75/bin
-export HTTP_PROXY=http://http://cache1.lexmark.com:80
 
 #Apache Tomcat Environment Vars
 
