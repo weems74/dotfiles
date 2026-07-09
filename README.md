@@ -12,3 +12,5 @@ Here's another change
 Here's yet another change
 
 And another one...
+
+Here's my new awesome feature
