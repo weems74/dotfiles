@@ -14,16 +14,17 @@ alias mkdir='mkdir -p'
 # Environment Variables
 ##########
 
-#JAVA environment vars
-export JAVA_HOME=/opt/java/jdk1.7.0_75/
-export PATH=$PATH:/opt/java/jdk1.7.0_75/bin
-
-#Apache Tomcat Environment Vars
-
 #General
 export HISTCONTROL=ignorespace
 export HISTIGNORE="history:pwd:exit"
 export HISTSIZE=500
+
+##########
+# PATH Setup
+##########
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 ##########
 # Color-coded man pages
